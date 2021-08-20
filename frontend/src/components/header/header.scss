@@ -1,0 +1,36 @@
+header{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  padding: 0 50px;
+  border-bottom: 1px solid grey;
+
+  .logoContainer img{
+    width: auto;
+    height: 70px;
+    padding: 0;
+  }
+
+  .headerLinks{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+
+  .headerLinks a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+  }
+
+  .headerLinks a:hover{
+    text-decoration: underline;
+  }
+
+}

@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  book-site:
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+  mongodb:
+    image: mongo:4.0.13-xenial

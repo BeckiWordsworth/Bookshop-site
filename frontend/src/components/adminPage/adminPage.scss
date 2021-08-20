@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+$primaryWhiteColor: #fff;
+$primaryGreyColor: #ebe8e6;
+$primaryButtonColor: #ead9c2;
+$primaryButtonHoverColor: #a07a5e;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.pageContentLoginPage{
+  background-image: url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=31b0b078f5da0a750f05e27c6d9df39b&auto=format&fit=crop&w=1753&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .formsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+  .formBox {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 280px;
+    height: 400px;
+    background-color: #ffffffe1;
+    font-weight: bold;
+    border-radius: 20px;
+    margin: 0 35px;
+    h4{
+      text-align: center;
+    }
+    .loginForm, .signupForm {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-radius: 20px;
+      input[type=text], [type=password] {
+        width: 100%;
+        padding: 5px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 15px;
+      }
+      button {
+        background-color: $primaryButtonColor ;
+        border-radius: 10px;
+        padding: 5px 15px;
+        border: none;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 100%;
+      }
+      button:hover {
+        background-color: #a07a5e;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.pageContentAddNewBook{
+  background-image: url(https://pm1.narvii.com/6654/4f29ccd3f16b019726d9eb6c98b8357b06ae85cb_hq.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  h4{
+    text-align: center;
+  }
+  .formsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+  .formBox {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 350px;
+    height: auto;
+    background-color: #ffffffe1;
+    font-weight: bold;
+    border-radius: 20px;
+    .addNewBookForm{
+      display: flex;
+      flex-direction: column;
+      input[type=text], [type=password], select {
+        width: 100%;
+        padding: 5px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 15px;
+      }
+      button {
+        background-color: $primaryButtonColor ;
+        border-radius: 10px;
+        padding: 5px 15px;
+        border: none;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 100%;
+      }
+      button:hover {
+        background-color: $primaryButtonHoverColor;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.backButtonContainer{
+  display: flex;
+  justify-content: flex-start;
+  .navigationButtonTop-small {
+    background-color: $primaryButtonColor;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 15px;
+    width: auto;
+    border: none;
+    font-size: 15px;
+    }
+    button:hover {
+      background-color: $primaryButtonHoverColor;
+      color: #fff;
+    }
+}
